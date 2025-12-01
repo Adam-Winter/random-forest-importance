@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.inspection import permutation_importance
 
-def train_rf(X, y, n_estimators=500, random_state=42):
+def train_rf(X, y, n_estimators=50, random_state=42):
     model = RandomForestRegressor(
         n_estimators=n_estimators,
         random_state=random_state,
