@@ -3,6 +3,7 @@ from src.synthetic_data import generate_synthetic_data
 from src.utils import train_rf, plot_importances
 from src.conditional_importance import conditional_permutation_importance
 from src.wine_quality_analysis import run_wine_analysis
+from src.california_housing_analysis import run_california_housing_analysis
 
 import pandas as pd
 from sklearn.inspection import permutation_importance
@@ -32,6 +33,9 @@ def main():
 
     print("\nRunning Wine Quality analysis...")
     run_wine_analysis()
+
+    print("\nRunning California Housing analysis...")
+    run_california_housing_analysis()
 
 if __name__ == "__main__":
     main()
